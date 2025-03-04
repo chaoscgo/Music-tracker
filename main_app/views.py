@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 class Song:
     def __init__(self, name, artist, genre, date, length):
@@ -18,7 +17,7 @@ songs = [
 
 
 def home(request):    
-    return HttpResponse('<h1>Hello World!</h1>')
+    return render(request, 'home.html')
 
 def about(request):
     return render(request, 'about.html')
