@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/songs/song-detail.css' %}" />
+{% endblock %} 
+{% block content %}
+<section class="song-container">
+  <div class="song-img">
+    <img src="{% static 'images/sk8r-boi-song.svg' %}" alt="A skater boy song" />
+  </div>
+  <div class="song-details">
+    <h1>{{ song.name }}</h1>
+    {% if song.age > 0 %}
+      <h2>A {{ song.age }} year old {{ song.breed }}</h2>
+    {% else %}
+      <h2>A {{ song.breed }} kitten.</h2>
+    {% endif %}
+    <p>{{ song.description }}</p>
+
+    <div class="song-actions">
+        <a href="{% url 'song-update' song.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'song-delete' song.id %}" class="btn danger">Delete</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
