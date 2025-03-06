@@ -13,17 +13,19 @@
 <section class="card-container">
   {% for song in songs %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img
-            src=""
-            alt=""
-          />
+      <a href="{% url 'song-detail' song.id %}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img
+              src=""
+              alt=""
+            />
+          </div>
+          <h2 class="card-title">{{ song.name }}</h2>
+          <h3>{{ song.genre }} song by {{ song.artist }}</h3>
+          <h4>{{ song.length }} minutes long and published on {{ song.date }}</h4>
         </div>
-        <h2 class="card-title">{{ song.name }}</h2>
-        <h3>{{ song.genre }} song by {{ song.artist }}</h3>
-        <h4>{{ song.length }} minutes long and published on {{ song.date }}</h4>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>
