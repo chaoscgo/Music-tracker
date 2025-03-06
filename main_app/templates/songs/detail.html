@@ -20,6 +20,41 @@
   </div>
 </section>
 
+<section class="artist-container">
+  <div class="title">
+    <h2>Artist</h2>
+  </div>
+  <h3>Add an Artist</h3>
+  <form action="{% url 'add-artist' song.id %}" method="post" class="content" autocomplete="off">
+    {% csrf_token %}
+    {{ artist_form.as_p }}
+    <button type="submit" class="btn submit">Add Artist</button>
+  </form>
+  <h3>Artists</h3>
+  {% if song.artist_set.all.count %}
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for artist in song.artist_set.all %}
+          <tr>
+            <td>{{artist.name}}</td>
+            <td>{{artist.age}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <div class="content">
+      <p>⚠️ {{song.name}} has not been assigned an artist!</p>
+    </div>
+  {% endif %}
+</section>
+
 <input type=button value="Previous Page" onClick="javascript:history.go(-1);">
 
 {% endblock %}
