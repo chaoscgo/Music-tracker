@@ -4,7 +4,7 @@ from django.urls import reverse
 class Song(models.Model):
     name = models.CharField(max_length=100)
     genre = models.CharField(max_length=100)
-    artist = models.CharField(max_length=100)
+    # artist = models.CharField(max_length=100)
     date = models.DateField()
     length = models.IntegerField()
 
@@ -13,3 +13,13 @@ class Song(models.Model):
     
     def get_absolute_url(self):
         return reverse('song-detail', kwargs={'song_id': self.id})
+    
+class Artist(models.Model):
+    name = models.CharField(max_length=100)
+    age = models.IntegerField()
+    album = models.CharField(max_length=100)
+
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.name
