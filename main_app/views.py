@@ -28,11 +28,11 @@ def add_artist(request, song_id):
 
 class SongCreate(CreateView):
     model = Song
-    fields = ['name', 'genre', 'artist', 'date', 'length']
+    fields = ['name', 'genre', 'date', 'length']
 
 class SongUpdate(UpdateView):
     model = Song
-    fields = ['name', 'genre', 'artist', 'date', 'length']
+    fields = ['name', 'genre', 'date', 'length']
 
 class SongDelete(DeleteView):
     model = Song
