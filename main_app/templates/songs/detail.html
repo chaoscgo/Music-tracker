@@ -6,16 +6,12 @@
 {% block content %}
 <section class="song-container">
   <div class="song-img">
-    <img src="{% static 'images/sk8r-boi-song.svg' %}" alt="A skater boy song" />
+    <img src="" alt="" />
   </div>
   <div class="song-details">
     <h1>{{ song.name }}</h1>
-    {% if song.age > 0 %}
-      <h2>A {{ song.age }} year old {{ song.breed }}</h2>
-    {% else %}
-      <h2>A {{ song.breed }} kitten.</h2>
-    {% endif %}
-    <p>{{ song.description }}</p>
+      <h2>{{ song.genre }} by {{ song.artist }}</h2>
+      <h2>Published on {{ song.date }} and is {{song.length}} minutes long.</h2>
 
     <div class="song-actions">
         <a href="{% url 'song-update' song.id %}" class="btn warn">Edit</a>
