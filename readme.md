@@ -38,7 +38,7 @@ The Music Tracker is an app designed for people who love music.  It is a way to 
 
 Anytime you hear a song that you really love, you can enter it into the Music Tracker for future reference.
 
-You can sign up for a free account and start your song list by entering the name of the song, the genre of music, the artist's name, the date the song was published and the length of the song.
+You can sign up for a free account and start your song list by entering the name of the song, the genre of music, the date the song was published and the length of the song. Once on a song's detail page, you can also add artists associated with this song.
 
 You are able to manage your songs by adding new songs, editing information about songs already in the list and deleting any songs you no longer wish to keep in your list.
 
