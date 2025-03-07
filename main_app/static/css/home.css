@@ -63,6 +63,24 @@ main {
     margin-top: 16px;
   }
   
+  .login {
+    border: var(--borders);
+    padding: 20px;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    width: 100%;
+  }
+
+  .logo-container {
+    max-width: 520px;
+  }
+
+  .image-style {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
   @media only screen and (min-width: 768px) {
     main {
       justify-content: space-around;
@@ -72,16 +90,7 @@ main {
       width: 40%;
     }
   
-    .login {
-      border: var(--borders);
-      padding: 20px;
-      border-radius: var(--card-border-radius);
-      box-shadow: var(--card-box-shadow);
-      width: 100%;
-    }
-  
-    .logo-container {
-      max-width: 520px;
-    }
   }
+  
+
   
