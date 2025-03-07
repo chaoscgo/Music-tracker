@@ -7,7 +7,7 @@
 
 <h1>Welcome to the Music Tracker!</h1>
 
-<h2>One place to track all of your favorite songs!</h2
+<h2>One place to track all of your favorite songs!</h2>
 
 <section class="logo-container">
   <div class="song-container">
@@ -16,6 +16,15 @@
   <img src="" alt="" />
 </section>
 
-
+{% if not user.is_authenticated %}
+  <section>
+    <form action="{% url 'home' %}" method="post" class="login">
+      <h1>Login</h1>
+      {% csrf_token %} {{ form.as_p }}
+      <input type="hidden" name="next" value="{{ next }}" />
+      <button type="submit" class="btn submit">Login</button>
+    </form>
+  </section>
+{% endif %}
 
 {% endblock %}
