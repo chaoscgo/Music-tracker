@@ -1,7 +1,7 @@
 i# READING LIST
 
-![Screenshot of landing page](./wsl.localhost_Ubuntu_home_chaoscgo_code_ga_projects_reading-list_Landing-Page-screenshot.png)
-![Music Tracker landing page-1](https://github.com/user-attachments/assets/f0bbf670-5e81-46f9-a7d4-69f92db9ac09)
+![Music Tracker landing page-1](https://github.com/user-attachments/assets/7f1fb6b5-6cbb-4c57-989c-d63691212470)
+
 
 ## Description of Project
 
@@ -83,8 +83,8 @@ We were happy to be able to get the CRUD functionality working without too much 
 
 We also played around with using a Back button and got that working well.
 
-![Screenshot of show page](./wsl.localhost_Ubuntu_home_chaoscgo_code_ga_projects_reading-list_Show-Page-screenshot.png)
-![Details page](https://github.com/user-attachments/assets/475284e8-ce3a-411d-b79e-f815090b1830)
+![Song List](https://github.com/user-attachments/assets/f0c0ace4-cd9e-43d8-ac96-784cbb0f5a08)
+
 
 ## Key Learnings/Takeaways
 
