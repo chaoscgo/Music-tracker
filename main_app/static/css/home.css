@@ -72,7 +72,7 @@ main {
   }
 
   .logo-container {
-    max-width: 520px;
+    max-width: fit-content;
   }
 
   .image-style {
@@ -89,7 +89,6 @@ main {
     main > section {
       width: 40%;
     }
-  
   }
   
 

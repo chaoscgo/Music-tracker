@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-radius: 15px;
+  background-color: rgb(255, 120, 350);
 }
 
 table {
@@ -12,7 +14,7 @@ table {
 
 th {
   text-align: left;
-  padding: 6px 20px 0 0;
+  padding: 6px 0 0 0;
   font-weight: normal;
   vertical-align: top;
   font-size: var(--font-reg);
@@ -36,4 +38,5 @@ td > textarea {
 .btn {
   align-self: flex-end;
   margin-right: 40px;
+  margin-bottom: 15px;
 }

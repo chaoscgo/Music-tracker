@@ -17,15 +17,18 @@
         <div class="card-content">
           <div class="card-img-container">
             <img
-              src=""
-              alt=""
+              src="{% static 'images/play_button.jpeg' %}"
+              alt="headphones"
             />
           </div>
           <h2 class="card-title">{{ song.name }}</h2>
-          <h3>{{ song.genre }} song</h3>
-          <h4>{{ song.length }} minutes long and published on {{ song.date }}</h4>
         </div>
       </a>
+      <div class="card-info">
+        <h3>{{ song.genre }} song</h3>
+        <h3>{{ song.length }} minutes long</h4>
+        <h3>published on {{ song.date }}</h3>
+      </div>
     </div>
   {% endfor %}
 </section>
