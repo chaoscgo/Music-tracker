@@ -45,7 +45,7 @@ You are able to manage your songs by adding new songs, editing information about
 
 ## Deployment Link
 
-https://reading-list-app-6bcea523d230.herokuapp.com/
+https://musictracker-app-3047ff18ac2c.herokuapp.com/
 
 ## Planning Materials
 
